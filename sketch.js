@@ -18,19 +18,19 @@ let audioPlayed = false;
 let began = false;
 
 function preload() {
-  remoteBG = loadImage('images/remoteBG.png');
-  icon = loadImage('holy-greta-logo.png');
-  rb1 = loadImage('images/remoteButton1.png');
-  bn0 = loadImage('news/breaking-news-00.png');
-  bn1 = loadImage('news/breaking-news-01.png');
-  bn2 = loadImage('news/breaking-news-02.png');
-  bn3 = loadImage('news/breaking-news-03.png');
-  tvFrame = loadImage('images/TVframe.png');
-  audio = loadSound('Breaking-News.mp3');
-  remoteButton2 = loadImage('images/remoteButton2.png');
-  t3 = loadImage('/images/openTV033.png');
-  t6 = loadImage('images/openTV066.png');
-  t10 = loadImage('images/openTV100.png');
+  remoteBG = loadImage('./images/remoteBG.png');
+  icon = loadImage('./holy-greta-logo.png');
+  rb1 = loadImage('./images/remoteButton1.png');
+  bn0 = loadImage('./news/breaking-news-00.png');
+  bn1 = loadImage('./news/breaking-news-01.png');
+  bn2 = loadImage('./news/breaking-news-02.png');
+  bn3 = loadImage('./news/breaking-news-03.png');
+  tvFrame = loadImage('./images/TVframe.png');
+  audio = loadSound('./Breaking-News.mp3');
+  remoteButton2 = loadImage('./images/remoteButton2.png');
+  t3 = loadImage('./images/openTV033.png');
+  t6 = loadImage('./images/openTV066.png');
+  t10 = loadImage('./images/openTV100.png');
 }
 
 function setup() {
