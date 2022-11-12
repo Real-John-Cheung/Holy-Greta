@@ -262,16 +262,16 @@ function preload(){
   targets.add(over);
   //
   
-}
 
-function setup() {
-  createCanvas(1280, 720);
-  
-  
   for (let i=0;i<targets.length;i++){
     targets[i].setCollider('circle',0,0,30);
     targets[i].addAnimation('void','images/transp.png');
   }
+
+}
+
+function setup() {
+  createCanvas(1280, 720);
   
   bgm.setVolume(0);
 }
@@ -321,6 +321,7 @@ function draw() {
     if (!bgm.isPlaying()) {
       bgm.loop();
       bgm.setVolume(0.8, 1.5);
+      bgmIsPlayed = true;
     }
   }
   

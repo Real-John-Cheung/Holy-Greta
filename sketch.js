@@ -27,20 +27,24 @@ function preload() {
   bn3 = loadImage('news/breaking-news-03.png');
   tvFrame = loadImage('images/TVframe.png');
   audio = loadSound('Breaking-News.mp3');
+  remoteButton2 = loadImage('images/remoteButton2.png');
+  t3 = loadImage('/images/openTV033.png');
+  t6 = loadImage('images/openTV066.png');
+  t10 = loadImage('images/openTV100.png');
 }
 
 function setup() {
   createCanvas(1280, 720);
   remoteButton = createSprite(width / 2, height / 2);
   remoteButton.addAnimation('normal', rb1);
-  remoteButton.addAnimation('pressed', 'images/remoteButton2.png');
+  remoteButton.addAnimation('pressed', remoteButton2);
 
   breakingNews = createSprite(width / 2, height / 2);
   breakingNews.addAnimation('normal', bn0, bn1);
   breakingNews.addAnimation('loop', bn2, bn2, bn2, bn2, bn3, bn3, bn3, bn3);
 
   openTV = createSprite(width / 2, height / 2);
-  openTV.addAnimation('normal', '/images/openTV033.png', 'images/openTV033.png', 'images/openTV066.png', 'images/openTV066.png', 'images/openTV100.png', 'images/openTV100.png', 'images/openTV066.png', 'images/openTV066.png');
+  openTV.addAnimation('normal', t3, t3, t6, t6, t10, t10, t6, t6);
 
   background(204, 149, 230);
   timer2 = millis();

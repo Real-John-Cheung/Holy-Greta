@@ -264,20 +264,20 @@ function preload() {
   notRight.addAnimation('touched', 'images/not-right.png');
   triggerByTouch.add(notRight);
   //...
-}
 
-function setup() {
-  createCanvas(1280, 720);
-  
-  
   for (let i=0;i<triggerByTouch.length;i++){
     triggerByTouch[i].setCollider('circle',0,0,30);
     triggerByTouch[i].addAnimation('void','images/transp.png');
   }
-  
+
   noEntry = createSprite(6340 , 590);
   noEntry.addAnimation('normal', 'images/noEntry.png');
+}
 
+let mouseAction = false
+
+function setup() {
+  createCanvas(1280, 720);
   bgm.setVolume(0);
 }
 
